@@ -1,3 +1,5 @@
+$location = "canadacentral"
+$rgName = "rg-demo-secure"
 $vnetName = "vnet-demo"
 
 $workloadSubnet = New-AzVirtualNetworkSubnetConfig `
