@@ -1,3 +1,11 @@
+$location = "canadacentral"
+$rgName = "rg-demo-secure"
+$vnetName = "vnet-demo"
+# Must be globally unique, 3-24 chars
+$keyVaultName = "kv-demo-$(Get-Random -Minimum 10000 -Maximum 99999)"
+
+
+
 $tenantId = (Get-AzContext).Tenant.Id
 
 $keyVault = New-AzKeyVault `
